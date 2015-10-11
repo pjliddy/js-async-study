@@ -12,7 +12,7 @@
 
 #### Synchronous operations.
 
-Typically, a computer *runs* a set of operations on after another. 
+Typically, a computer *runs* a set of operations one after another. 
 
 For example, if we have operations A, B and C the computer will: 
 
@@ -41,21 +41,19 @@ console.log("Fishcake".length);
 
 #### Asynchronous operations.
 
-But, we can also run operations asynchronously, overlapping the execution of operations.
+We can also run operations asynchronously. Overlapping the execution of operations.
 
-*ASynchronous Operations, (A, B, C), may be performed at same time.*
+*Asynchronous Operations, (A, B, C), may be performed at same time.*
 >|----A-----|                                                                                      
 >>|-----B-----------|                                                                             
 >>>|-------C------| 
 
-But, first we need to learn about javascript's setTimeout function.
+To simulate **async** operations we need to see javascript's setTimeout function.
 
 ##### Javascript setTimeout
 
 Take a look at 
 [setTimeout](https://nodejs.org/docs/v0.6.1/api/timers.html#setTimeout)
-
-Now, lets code this together (create timeout.js):
 
 ### We Do:
 
@@ -113,7 +111,7 @@ Run ``$ time node timeout.js``
 
 Notice the amount of time taken to run all of the operations was only five seconds? Shouldn't this take, 3 + 4 + 5, 12 seconds?
 
-We'll it would if these operations were executed one after another, **synchronously**. But, by using ``setTimeout`` we are **simulating async operations**.
+We'll it would if these operations were executed one after another, **synchronously**. When we use ``setTimeout`` we are **simulating async operations**.
 
 
 ### You Do
@@ -289,11 +287,12 @@ We use **Synchronous operations if we don't mind blocking**. It's a lot easier t
 
 
 ### You Do:
-Think about responding to user actions on a web page. What.
+Think about responding to user actions on a web page. 
 
-What JQuery function have we used that is **non-blocking** and waits for a user to click on an element?
+Create a simple HTML page that executes JS. Create a **non-blocking operation** that will ``alert('Did it!')`` when you click on a some text.
 
+You can use JQuery or just the browser's native functions to handle the click event. Easiest to use the Browser's native functions, [Browser getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) and [Browser addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener).
 
 ### You Do: 
-This video explains the event loop as it's implemented in the browser. ["Help, I'm stuck in an event loop."](https://vimeo.com/96425312)
+This video explains the event loop as it's implemented in the browser. Takes about 20 minutes. ["Help, I'm stuck in an event loop."](https://vimeo.com/96425312)
 
