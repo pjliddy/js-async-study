@@ -10,8 +10,6 @@
 
 ## Synchronous vs Asynchronous
 
-#### Synchronous operations.
-
 Typically, a computer *runs* a set of operations one after another. 
 
 For example, if we have operations A, B and C the computer will: 
@@ -22,7 +20,29 @@ For example, if we have operations A, B and C the computer will:
 
 > |----A-----||-----B-----------||-------C------|
 
+But this can be a problem if some operations take too long. For example, if during the execution of an application it's need to **access the disk**. Or if the application needs to **make a HTTP Request** to a remote server over the internet.
+
+**The application will grind to a complete stop** waiting for these relatively slow operations.
+
+The application could also grind to a halt if it **needs user input**. For example, **if the application is a browser and the HTML page needs user input.**
+
+The browser could be just stop working until the user decided to **select a link** or **enter input to a form.** 
+
+For these cases we to use **Asynchronous** operations.
+
+*Asynchronous Operations, (A, B, C), may be performed at same time.*
+>|----A-----|                                                                                      
+>>|-----B-----------|                                                                             
+>>>|-------C------| 
+
+We will simulate **Synchronous (sync)** and **Asynchronous (async)** operations using JS **setTimeout**. 
+
 ### We Do:
+
+#### Synchronous operations.  
+
+**Create a file sync.js.**
+
 ```javascript
 // Synchronous Operations, (A, B, C), 
 // follow one after other                                          
@@ -56,6 +76,8 @@ Take a look at
 [setTimeout](https://nodejs.org/docs/v0.6.1/api/timers.html#setTimeout)
 
 ### We Do:
+
+**Create a file async.js.**
 
 ```javascript
 /////////////////////////////////////////////////////
@@ -102,12 +124,12 @@ setTimeout(function(){
 ```
 
 
-Run ``$ node timeout.js``
+Run ``$ node async.js``
 
 
 Let's notice how much time it took to run the above operations. *We're going to use the unix ``time`` command.*
 
-Run ``$ time node timeout.js``
+Run ``$ time node async.js``
 
 Notice the amount of time taken to run all of the operations was only five seconds? Shouldn't this take, 3 + 4 + 5, 12 seconds?
 
@@ -237,7 +259,9 @@ Notice how this takes about 5 seconds. Yes, we are running each operation above 
 
 Using the above defined sleep and syncOperation functions simulate how a short order cook will prepare orders in a **sync** manner. *Create a JS file, cook_sync.js*
 
-Using the above asyncOperation function simulate how the short order cook will prepare orders in a **async** manner. *Create a JS file, cook_async.js*
+Using the above asyncOperation function simulate how the short order cook will prepare orders in a **async** manner.
+
+**Create a JS file, short_orders.js**
 
 The order of each food order will be:
 
@@ -294,5 +318,10 @@ Create a simple HTML page that executes JS. Create a **non-blocking operation** 
 You can use JQuery or just the browser's native functions to handle the click event. Easiest to use the Browser's native functions, [Browser getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) and [Browser addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener).
 
 ### You Do: 
-This video explains the event loop as it's implemented in the browser. Takes about 20 minutes. ["Help, I'm stuck in an event loop."](https://vimeo.com/96425312)
+
+This video explains the event loop as it's implemented in the browser. Takes about 20 minutes. 
+
+> The speaker makes reference to **AJAX**. This is when JS code generates a HTTP Request. We'll see more about this later*
+
+Watch ["Help, I'm stuck in an event loop."](https://vimeo.com/96425312)
 
