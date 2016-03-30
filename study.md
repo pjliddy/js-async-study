@@ -10,8 +10,8 @@ material. Instead, digest what you've read and repeat it in your own voice.
 
 ## Required Readings
 
--   [Event Loop Video](https://vimeo.com/96425312)
--   [Aysnc Resturant](http://alookonthecode.blogspot.com/2012/10/simply-explained-multithreaded-vs-async.html)
+-   [What the heck is the event loop anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+-   [The Restaurant](https://www.codeschool.com/blog/2014/10/30/understanding-node-js/)
 
 ## Event Loop?
 
