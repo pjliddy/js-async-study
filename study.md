@@ -12,7 +12,6 @@ material. Instead, digest what you've read and repeat it in your own voice.
 
 -   [What the heck is the event loop anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 -   [The Restaurant](https://www.codeschool.com/blog/2014/10/30/understanding-node-js/)
--   [Node Hero](https://blog.risingstack.com/node-hero-async-programming-in-node-js/)
 -   [Javes!](https://www.discovermeteor.com/blog/understanding-sync-async-javascript-node/) (until section on fibers)
 
 ## Event Loop?
