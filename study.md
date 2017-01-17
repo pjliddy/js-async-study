@@ -15,9 +15,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 -   [The Restaurant](https://www.codeschool.com/blog/2014/10/30/understanding-node-js/)
 -   [Javes!](https://www.discovermeteor.com/blog/understanding-sync-async-javascript-node/) (until the section on fibers)
 
-## Event Loop?
+## The Event Loop
 
-In your own words, describe the event loop and how it works?
+In your own words, describe the event loop and how it works.
 
 ```md
 <!-- your answer here -->
@@ -25,15 +25,15 @@ In your own words, describe the event loop and how it works?
 
 ## Synchronicity and Asynchronicity
 
-In your own words, describe the difference between sync and async:
+In your own words, describe the difference between sync and async.
 
 ```md
 <!-- your answer here -->
 ```
 
-# Asynchronous Code
+# Async Advantages and Disadvantages
 
-What are some benefits and disadvantages of async?
+What are some advantages and disadvantages of async?
 
 ```md
 <!-- your answer here -->
