@@ -2,6 +2,10 @@
 
 # JavaScript Async Study
 
+-   What is synchronous code and asynchronous code?
+-   What are the differences between the two?
+-   What are the advantages and disadvantages of each?
+
 ## Prerequisites
 
 -   [jquery-ajax-get](https://github.com/ga-wdi-boston/jquery-ajax-get)
