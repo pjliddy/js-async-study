@@ -22,7 +22,7 @@ In your own words, describe the event loop and how it works?
 <!-- your answer here -->
 ```
 
-## Synchronocity and Asynchronocity
+## Synchronicity and Asynchronicity
 
 In your own words, describe the difference between sync and async:
 
