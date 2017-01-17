@@ -22,11 +22,15 @@ In your own words, describe the event loop and how it works?
 <!-- your answer here -->
 ```
 
+## Synchronocity and Asynchronocity
+
 In your own words, describe the difference between sync and async:
 
 ```md
 <!-- your answer here -->
 ```
+
+# Asynchronous Code
 
 What are some benefits and disadvantages of async?
 
