@@ -31,7 +31,7 @@ In your own words, describe the difference between sync and async.
 <!-- your answer here -->
 ```
 
-# Async Advantages and Disadvantages
+## Async Advantages and Disadvantages
 
 What are some advantages and disadvantages of async?
 
