@@ -2,9 +2,21 @@
 
 # JavaScript Async Study
 
+-   What is synchronous code and asynchronous code?
+-   What are the differences between the two?
+-   What are the advantages and disadvantages of each?
+
 ## Prerequisites
 
 -   [jquery-ajax-get](https://github.com/ga-wdi-boston/jquery-ajax-get)
+
+## Objectives
+
+By the end of this, developers should be able to:
+
+-   Describe the event loop.
+-   Determine the differences between synchronicity and asynchronicity.
+-   Know when to use synchronous code and asynchronous code.
 
 ## Instructions
 
