@@ -1,3 +1,4 @@
+# JavaScript Async Study
 
 Use your favorite search engine and the provided readings to research and
 respond to the following questions.
