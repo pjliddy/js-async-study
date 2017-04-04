@@ -29,7 +29,10 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-The event loop is the mechanism by which JavaScript manages runtime event calls through the call stack and callback queue. The event loop waits until the call stack is clear, then moves callbacks from the task queue to the stack for execution.
+The event loop is the mechanism by which JavaScript manages runtime event calls
+through the call stack and callback queue. The event loop waits until the call
+stack is clear, then moves callbacks from the task queue to the stack for
+execution.
 
 (SOURCE: Videos)
 ```
@@ -39,7 +42,10 @@ The event loop is the mechanism by which JavaScript manages runtime event calls 
 In your own words, describe the difference between sync and async.
 
 ```md
-Events that are aynchronous require each event to complete its actions before the next event can begin. Asynchronous events are able to use callbacks functions to execute when its actions are complete and free up the event queue in the meantime.
+Events that are aynchronous require each event to complete its actions before
+the next event can begin. Asynchronous events are able to use callbacks
+functions to execute when its actions are complete and free up the event queue
+in the meantime.
 
 (SOURCE: discovermeteor.com blog post)
 ```
@@ -49,9 +55,15 @@ Events that are aynchronous require each event to complete its actions before th
 What are some advantages and disadvantages of async?
 
 ```md
-One of the big advantages of async is the ability to "unblock" the event loop and free up the application to respond to its environment. This allows for updating the user interface, sending and receiving messages, monitoring network activity, etc.
+One of the big advantages of async is the ability to "unblock" the event loop
+and free up the application to respond to its environment. This allows for
+updating the user interface, sending and receiving messages, monitoring network
+activity, etc.
 
-A big disadvantage of asynch is the possibility for a great deal of complexity with callbacks. Additionally, there is no guarantee that the callback event will ever be called, so the application amy not end up behaving in a way that the original function assumed.
+A big disadvantage of asynch is the possibility for a great deal of complexity
+with callbacks. Additionally, there is no guarantee that the callback event
+will ever be called, so the application amy not end up behaving in a way that
+the original function assumed.
 
 (SOURCE: Videos)
 ```
